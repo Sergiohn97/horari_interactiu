@@ -77,7 +77,7 @@ class _HorariState extends State<Horari> {
                     Text(elDia.name),
                     for (TimeOfDay laHora in widget._controller.horesClasse)
                       Expanded(
-                        child: GestureDetector(
+                        child: GestureDetector( //Gesture detector sirve para botones con funcionalidades
                             onTap: () async {
                               await Navigator.pushNamed(context, "/clase/edit",
                                   arguments: {"dia": elDia, "hora": laHora});
